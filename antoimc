@@ -3153,13 +3153,6 @@ pcall(function() Library:ChangeAccent(Color3.fromRGB(76, 162, 252)) end)
           target.Size = UDim2.new(0, 60, 1, 0)
       end)
   end
-local _hitparts = {"Closest Part","Head","Neck","UpperTorso","LowerTorso","HumanoidRootPart","LeftArm","RightArm","LeftLeg","RightLeg","Random"}
-local _easings  = {"Linear","Sine","Quad","Cubic","Quart","Quint","Expo","Circ","Back","Bounce","Elastic"}
-local _easeOut  = {"In","Out","InOut"}
-local _locktype = {"Camera"}
-local _boxtype  = {"Corner","Full","3D"}
-local _namepos  = {"Top","Bottom","Left","Right","Center"}
-local _materials= {"Plastic","Wood","Slate","Concrete","CorrodedMetal","DiamondPlate","Foil","Grass","Ice","Marble","Granite","Brick","Pebble","Sand","Fabric","SmoothPlastic","Metal","WoodPlanks","Cobblestone","Rock","Glacier","Snow","Sandstone","Mud","Basalt","Ground","CrackedLava","Neon","Glass","Asphalt","LeafyGrass","Salt","Limestone","Pavement"}
 
 end
 
