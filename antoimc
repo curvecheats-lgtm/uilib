@@ -3126,7 +3126,7 @@ pcall(function() Library:ChangeAccent(Color3.fromRGB(76, 162, 252)) end)
       frame:Destroy()
       return sf
   end
-  local function applyScroll(page)
+  function Library:applyScroll(page)
       if not page or not page.Sections then return end
       for _, section in ipairs(page.Sections) do
           if section.Elements then
@@ -3134,6 +3134,9 @@ pcall(function() Library:ChangeAccent(Color3.fromRGB(76, 162, 252)) end)
               section.Elements.Right = makeScrollable(section.Elements.Right)
           end
       end
+  end
+  local function applyScroll(page)
+      return Library:applyScroll(page)
   end
   local function pinTabLeft(window, page, leftOffset)
       pcall(function()
